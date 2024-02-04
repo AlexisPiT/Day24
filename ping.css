@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+body{
+    width: 100vw;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 20px;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.header{
+    width: 60%;
+    text-align: center;
+}
+span{
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: hsl(0deg 0% 58.82%);
+}
+h1{
+    margin-bottom: 0;
+}
+p{
+    font-size: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}
+.email{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.valid-email {
+    text-align: left;
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 45px;
+    padding-top: 7px;
+    opacity: 0;
+    color: #ff5263;
+  }
+  .invalid-email {
+    text-align: left;
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 15px;
+    padding-top: 7px;
+    opacity: 1;
+    color: #ff5263;
+  }
+input{
+    width: 100%;
+    border: 1px solid hsl(0deg 0% 58.82%);
+    border-radius: 30px;
+    height: 50px;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+button{
+    width: 30%;
+    max-height: 52px;
+    padding: 0;
+    background-color: hsl(223.17deg 87.23% 63.14%);
+    border-radius: 30px;
+    border: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.7;
+}
+.body{
+    width: 70%;
+    height: 40%;
+    margin-top: 2.5rem;
+}
+.dashboard{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    gap: 1.5em;
+}
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid hsl(0deg 0% 58.82%);
+    text-align: center;
+    border-radius: 50%;
+}
+a:hover{
+    background-color: hsl(223.17deg 87.23% 63.14%);
+    border: 1px solid hsl(223.17deg 87.23% 63.14%);   
+}
+i{
+    color: hsl(223.17deg 87.23% 63.14%);
+}
+a:hover > i{
+    color: hsl(0, 2%, 80%);
+}
+@media screen and (min-width: 375px) and (max-width: 850px){
+    .header{
+        width: 90%;
+        height: auto;
+    }
+    form{
+        justify-content: space-around;
+        flex-direction: column;
+        height: 150px;
+    }
+    .email{
+        width: 90%;
+    }
+    input{
+        padding-right: 5px;
+    }
+    button{
+        padding: 0 20px;
+        width: 98%;
+        height: 52px;
+    }
+    .body{
+        height: 60%;
+        width: 90%;
+    }
+    footer{
+        margin-top: 2rem;
+    }
+    a{
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+}
